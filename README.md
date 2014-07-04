@@ -175,23 +175,10 @@
 
 ## Strings
 
-  - Use single quotes `''` for strings
-
-    ```javascript
-    // bad
-    var name = "Bob Parr";
-
-    // good
-    var name = 'Bob Parr';
-
-    // bad
-    var fullName = "Bob " + this.lastName;
-
-    // good
-    var fullName = 'Bob ' + this.lastName;
-    ```
+  - Use single or double quotes (`'` or `"`) for strings.  There is a slight preference for double-quotes, aligning with Mozilla style.
 
   - Strings longer than 80 characters should be written across multiple lines using string concatenation.
+
   - Note: If overused, long strings with concatenation could impact performance. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40)
 
     ```javascript
