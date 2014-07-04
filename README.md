@@ -6,6 +6,7 @@
 ## Table of Contents
 
   1. [Types](#types)
+  1. [undefined](#undefined)
   1. [Objects](#objects)
   1. [Arrays](#arrays)
   1. [Strings](#strings)
@@ -68,6 +69,45 @@
 
     console.log(foo[0], bar[0]); // => 9, 9
     ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## undefined
+
+  - `undefined` is an object.  You should use it as an object.  You can test for it.  For instance:
+
+    ```javascript
+    // good
+    function pow(a, b) {
+      if (b === undefined) {
+        b = 1;
+      }
+      return Math.pow(a, b);
+    }
+
+    // bad
+    function pow(a, b) {
+      if (typeof b == "undefined") {
+        b = 1;
+      }
+      return Math.pow(a, b);
+    }
+    ```
+
+  - *Only* use `typeof x == "undefined"` when the variable (`x`) may not be declared, and it would be an error to test `x === undefined`:
+
+    ```javascript
+    if (typeof Module == "undefined") {
+      Module = {};
+    }
+
+    // But also okay, for browser-only code:
+    if (window.Module === undefined) {
+      Module = {};
+    }
+    ```
+
+    Note that you can't use `window` in Node.js; if you think your code could be used in a server context you should use the first form.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -1505,7 +1545,7 @@
   - **Ripple**: [ripple/javascript-style-guide](https://github.com/ripple/javascript-style-guide)
   - **SeekingAlpha**: [seekingalpha/javascript-style-guide](https://github.com/seekingalpha/javascript-style-guide)
   - **Shutterfly**: [shutterfly/javascript](https://github.com/shutterfly/javascript)
-  - **TheLadders**: [TheLadders/javascript](https://github.com/TheLadders/javascript)  
+  - **TheLadders**: [TheLadders/javascript](https://github.com/TheLadders/javascript)
   - **Userify**: [userify/javascript](https://github.com/userify/javascript)
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
