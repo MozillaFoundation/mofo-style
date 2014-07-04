@@ -444,6 +444,16 @@
     }
     ```
 
+  - As an exception, declaring a variable in a `for` loop is common and okay.
+
+    ```javascript
+    // ok
+    for (var i=0; i<array.length; i++) {
+      ...
+    }
+    ```
+
+
 **[⬆ back to top](#table-of-contents)**
 
 
