@@ -83,40 +83,38 @@
     var item = {};
     ```
 
-  - Don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61)
+
+    ```javascript
+    if (typeof Module == "undefined") {
+      Module = {};
+    }
+
+    // But also okay, for browser-only code:
+    if (window.Module === undefined) {
+      Module = {};
+    }
+    ```
+
+    Note that you can't use `window` in Node.js; if you think your code could be used in a server context you should use the first form.
+
+**[⬆ back to top](#table-of-contents)**
+
+## Objects
+
+  - Use the literal syntax for object creation.
 
     ```javascript
     // bad
-    var superman = {
-      default: { clark: 'kent' },
-      private: true
-    };
+    var item = new Object();
 
     // good
-    var superman = {
-      defaults: { clark: 'kent' },
-      hidden: true
-    };
+    var item = {};
     ```
 
-  - Use readable synonyms in place of reserved words.
+   - You *may use* [reserved words](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Reserved_Words) as keys.
 
-    ```javascript
-    // bad
-    var superman = {
-      class: 'alien'
-    };
+    As an example that reserved words are both okay *right now* and will be indefinitely, the [IndexedDB API](https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB) uses `cursor.continue()`
 
-    // bad
-    var superman = {
-      klass: 'alien'
-    };
-
-    // good
-    var superman = {
-      type: 'alien'
-    };
-    ```
 
 **[⬆ back to top](#table-of-contents)**
 
