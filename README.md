@@ -1069,41 +1069,23 @@
     });
     ```
 
-  - Use a leading underscore `_` when naming private properties
+
+  - When saving a reference to `this` use `self`.
 
     ```javascript
     // bad
-    this.__firstName__ = 'Panda';
-    this.firstName_ = 'Panda';
-
-    // good
-    this._firstName = 'Panda';
-    ```
-
-  - When saving a reference to `this` use `_this`.
-
-    ```javascript
-    // bad
-    function() {
-      var self = this;
-      return function() {
-        console.log(self);
-      };
-    }
-
-    // bad
-    function() {
-      var that = this;
-      return function() {
-        console.log(that);
-      };
-    }
-
-    // good
     function() {
       var _this = this;
       return function() {
         console.log(_this);
+      };
+    }
+
+    // good
+    function() {
+      var self = this;
+      return function() {
+        console.log(self);
       };
     }
     ```
@@ -1130,22 +1112,6 @@
 ## Accessors
 
   - Accessor functions for properties are not required
-  - If you do make accessor functions use getVal() and setVal('hello')
-
-    ```javascript
-    // bad
-    dragon.age();
-
-    // good
-    dragon.getAge();
-
-    // bad
-    dragon.age(25);
-
-    // good
-    dragon.setAge(25);
-    ```
-
   - If the property is a boolean, use isVal() or hasVal()
 
     ```javascript
@@ -1329,16 +1295,6 @@
 
 
 ## jQuery
-
-  - Prefix jQuery object variables with a `$`.
-
-    ```javascript
-    // bad
-    var sidebar = $('.sidebar');
-
-    // good
-    var $sidebar = $('.sidebar');
-    ```
 
   - Cache jQuery lookups.
 
