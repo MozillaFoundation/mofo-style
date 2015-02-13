@@ -1,0 +1,26 @@
+{
+  "globals": {
+    "__dirname": false,
+    "__filename": false,
+    "console": false,
+    "module": false,
+    "process": false,
+    "require": false
+  },
+  "camelcase": true,
+  "bitwise": true,
+  "browser": true,
+  "curly": true,
+  "eqeqeq": true,
+  "freeze": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noempty": true,
+  "quotmark": true,
+  "trailing": true,
+  "undef": true,
+  "unused": "vars",
+  "maxlen": 80
+}
