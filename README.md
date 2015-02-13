@@ -1,6 +1,6 @@
 # Mozilla Foundation JavaScript Style Guide() {
 
-*A mostly reasonable approach to JavaScript*
+*Originally forked from the Airbnb style guide -- a mostly reasonable approach to JavaScript*
 
 
 ## Table of Contents
