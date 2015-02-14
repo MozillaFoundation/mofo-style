@@ -1,0 +1,24 @@
+{
+  "name": "mofo-style",
+  "version": "1.0.0",
+  "description": "A Javascript style guide including linters for the Mozilla Foundation Engineering team.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "style guide",
+    "lint",
+    "MoFo",
+    "Mozilla"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MozillaFoundation/javascript-style-guide.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MozillaFoundation/javascript-style-guide/issues"
+  },
+  "homepage": "https://github.com/MozillaFoundation/javascript-style-guide"
+}
