@@ -55,7 +55,7 @@
 
     console.log(foo, bar); // => 1, 9
     ```
-  - **Complex**: When you access a complex type you work on a reference to its value
+  - **Complex**: When you access a complex type you work on a reference to its value.
 
     + `object`
     + `array`
@@ -1192,7 +1192,7 @@
 
     var luke = new Jedi();
     luke.jump(); // => true
-    luke.setHeight(20) // => undefined
+    luke.setHeight(20); // => undefined
 
     // good
     Jedi.prototype.jump = function() {
