@@ -23,10 +23,9 @@
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
   "disallowYodaConditions": true,
-  "maximumLineLength": 80,
+  "maximumLineLength": 120,
   "requireBlocksOnNewline": 1,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
-  "requireCapitalizedComments": true,
   "requireCapitalizedConstructors": true,
   "requireCommaBeforeLineBreak": true,
   "requireCurlyBraces": true,
@@ -60,7 +59,7 @@
   "requireSpacesInsideObjectBrackets": {
     "allExcept": ["}"]
   },
-  "safeContextKeyword": ["that", "self"],
+  "safeContextKeyword": ["self"],
   "validateIndentation" : 2,
   "validateLineBreaks": "LF",
   "validateParameterSeparator": ", ",
