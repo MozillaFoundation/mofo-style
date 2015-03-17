@@ -123,34 +123,6 @@
     var item = {};
     ```
 
-
-    ```javascript
-    if (typeof Module == "undefined") {
-      Module = {};
-    }
-
-    // But also okay, for browser-only code:
-    if (window.Module === undefined) {
-      Module = {};
-    }
-    ```
-
-    Note that you can't use `window` in Node.js; if you think your code could be used in a server context you should use the first form.
-
-**[⬆ back to top](#table-of-contents)**
-
-## Objects
-
-  - Use the literal syntax for object creation.
-
-    ```javascript
-    // bad
-    var item = new Object();
-
-    // good
-    var item = {};
-    ```
-
    - You *may use* [reserved words](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Reserved_Words) as keys.
 
     As an example that reserved words are both okay *right now* and will be indefinitely, the [IndexedDB API](https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB) uses `cursor.continue()`
