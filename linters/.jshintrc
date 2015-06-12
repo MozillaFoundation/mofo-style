@@ -8,5 +8,6 @@
   "node": true,
   "shadow": true,
   "undef": true,
-  "unused": "vars"
+  "unused": "vars",
+  "esnext": true
 }
