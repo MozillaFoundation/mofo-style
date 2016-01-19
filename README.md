@@ -1,22 +1,35 @@
 # Mozilla Foundation JS Style Guide
 
-This repo contains "RC" files, which represent our standard rules, for several different JavaScript linters ([JSHint](http://jshint.com/), [JSCS](http://jscs.info/), and [JSBeautifier](https://github.com/beautify-web/js-beautify)).
+This repo contains an [ESLint](http://eslint.org/) "RC" file, which defines our standard JavaScript formatting rules.
 
-In your project you can use npm to install the RC files as a module, which can then be individually used by your project's build system (eg: Gulp or Grunt). Most linting tasks/plugins allow you to specify an external RC file, which you can point to your copies in `node_modules`.
+Additionally, ESLint will discover common syntax errors in your code.
 
-Simply run `npm install mofo-style --save-dev`.
+## Installing ESLint
 
-## Task Naming
+Assuming you already have Node and npm installed, run `npm install -g eslint` in your terminal. This will create a global install of the ESLint CLI.
 
-You should have at least 2 style tasks in your runner.
+## Setup
 
-- `validate` - Run all 3 linters in read only mode and report any errors.
-- `clean` - Run all 3 linters but also run JSBeautifier in write mode to automatically fix any formatting errors that it's capable of repairing.
+Even if you have ESLint as a global install, it's good practice to require it as a development dependency for your project. This ensures that it will be available for all developers regardless of their local configuration. It will also ensure that Travis is able to validate your code, which is a good idea since it ensures malformed code won't be deployed or merged.
+
+Simply run `npm install eslint --save-dev` in your project root.
+
+After you include ESLint in your project you can use npm to install this RC file as a module, which you can direct ESLint to use.
+
+Run `npm install mofo-style --save-dev`
+
+Once you have ESLint and this RC file, you can lint your project's code.
+
+*For example:*
+
+`eslint --config ./node_modules/mofo-style/.eslintrc.yaml example.js`
+
+It's recommended that you add a linting task to your project's task runner (preferably npm) as well as instruct Travis to execute it.
+
+## Extending The RC
+
+The RC provided in this repo is intended to cover any ES6 based project. It's up to you to extend it to cover your project's specific environment(s). You can either specify environments via the `--env` flag or add a `eslintConfig` field to your `package.json` with your extended configuration. Read more on this topic [here](http://eslint.org/docs/user-guide/configuring).
 
 ## Rules
 
-Refer to the [RC files](https://github.com/MozillaFoundation/javascript-style-guide/tree/master/linters) for specifics.
-
-### Roadmap
-
-- **Deprecate JSBeautifier** - JSCS has [an open issue](https://github.com/jscs-dev/node-jscs/issues/516) to add autoformatting, which will eliminate the need for JSBeautifier.
+Refer to the [RC file](https://github.com/MozillaFoundation/javascript-style-guide/blob/master/.eslintrc.yaml) and the corresponding [rule definitions](http://eslint.org/docs/rules) for specifics.
