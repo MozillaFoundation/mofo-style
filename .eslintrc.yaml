@@ -67,6 +67,10 @@ rules: # http://eslint.org/docs/rules
 
   prefer-arrow-callback: [1]
 
+  # Overrides to `eslint:recommended` rule set
+
+  no-console: [0]
+
 extends: "eslint:recommended"
 
 ecmaFeatures:
