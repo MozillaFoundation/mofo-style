@@ -33,3 +33,7 @@ The RC provided in this repo is intended to cover any ES6 based project. It's up
 ## Rules
 
 Refer to the [RC file](https://github.com/MozillaFoundation/javascript-style-guide/blob/master/.eslintrc.yaml) and the corresponding [rule definitions](http://eslint.org/docs/rules) for specifics.
+
+## EditorConfig
+
+To more easily follow the rules you can add the [EditorConfig](http://editorconfig.org/) plugin to your editor (if it needs one), which will read an `.editorconfig` file. Unfortunately, EditorConfig doesn't allow you to dynamically set a path for the config, so you'll need to copy .editorconfig into your project's root directory if it doesn't already have one.
