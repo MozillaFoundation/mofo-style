@@ -37,7 +37,7 @@ rules: # http://eslint.org/docs/rules
 
   # Strict Mode
 
-  strict: [2, "never"]
+  strict: [2, "global"]
 
   # Variables
 
