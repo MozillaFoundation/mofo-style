@@ -26,6 +26,12 @@ Once you have ESLint and this RC file, you can lint your project's code.
 
 It's recommended that you add a linting task to your project's task runner (preferably npm) as well as instruct Travis to execute it.
 
+### Automated formatting
+
+ESLint has a very helpful flag, `--fix`, which will automatically fix many styling issues for you (anything with a wrench icon on [this page](http://eslint.org/docs/rules/)).
+
+If you incorporate `--fix` into your task runner, then it's recommended that you make a new task for it instead of adding it to your standard linting task. This will allow you to safely connect your standard read-only test to Travis without running the risk of it modifying your committed code.
+
 ## Extending The RC
 
 The RC provided in this repo is intended to cover any ES6 based project. It's up to you to extend it to cover your project's specific environment(s). You can either specify environments via the `--env` flag or add a `eslintConfig` field to your `package.json` with your extended configuration. Read more on this topic [here](http://eslint.org/docs/user-guide/configuring).
