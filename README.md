@@ -38,7 +38,7 @@ The RC provided in this repo is intended to cover any ES6 based project. It's up
 
 ## Rules
 
-Refer to the [RC file](https://github.com/MozillaFoundation/javascript-style-guide/blob/master/.eslintrc.yaml) and the corresponding [rule definitions](http://eslint.org/docs/rules) for specifics.
+Refer to the [RC file](https://github.com/MozillaFoundation/mofo-style/blob/master/.eslintrc.yaml) and the corresponding [rule definitions](http://eslint.org/docs/rules) for specifics.
 
 ## EditorConfig
 
