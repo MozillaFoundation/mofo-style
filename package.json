@@ -14,11 +14,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/MozillaFoundation/javascript-style-guide.git"
+    "url": "git://github.com/MozillaFoundation/mofo-style.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MozillaFoundation/javascript-style-guide/issues"
+    "url": "https://github.com/MozillaFoundation/mofo-style/issues"
   },
-  "homepage": "https://github.com/MozillaFoundation/javascript-style-guide"
+  "homepage": "https://github.com/MozillaFoundation/mofo-style"
 }
