@@ -79,5 +79,6 @@ ecmaFeatures:
   defaultParams: true
   destructuring: true
   forOf: true
+  jsx: true
   spread: true
   templateStrings: true
