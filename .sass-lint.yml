@@ -19,11 +19,7 @@ rules:
   final-newline: 2
   force-attribute-nesting: 0
   force-element-nesting: 2
-  force-pseudo-nesting:
-    - 2
-    -
-      allow-leading-underscore: false
-      convention: camelcase
+  force-pseudo-nesting: 2
   function-name-format:
     - 2
     -
@@ -55,7 +51,7 @@ rules:
   no-color-literals: 2
   no-css-comments: 2
   no-debug: 2
-  no-duplicate-properties: 2
+  no-duplicate-properties: 1
   no-empty-rulesets: 1
   no-extends: 0
   no-ids: 1
@@ -63,7 +59,12 @@ rules:
   no-invalid-hex: 2
   no-mergeable-selectors: 1
   no-misspelled-properties: 2
-  no-qualifying-elements: 2
+  no-qualifying-elements:
+    - 2
+    -
+      allow-element-with-attribute: true
+      allow-element-with-class: false
+      allow-element-with-id: false
   no-trailing-zero: 2
   no-transition-all: 1
   no-url-protocols: 1
