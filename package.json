@@ -1,6 +1,6 @@
 {
   "name": "mofo-style",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A Javascript style guide including linters for the Mozilla Foundation Engineering team.",
   "main": "",
   "scripts": {
