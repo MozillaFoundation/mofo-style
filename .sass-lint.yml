@@ -24,7 +24,7 @@ rules:
     - 2
     -
       allow-leading-underscore: false
-      convention: camelcase
+      convention: hyphenatedlowercase
   hex-length: 0
   hex-notation:
     - 2
@@ -41,7 +41,7 @@ rules:
     - 2
     -
       allow-leading-underscore: false
-      convention: camelcase
+      convention: hyphenatedlowercase
   mixins-before-declarations: 2
   nesting-depth:
     - 1 # only a warning
