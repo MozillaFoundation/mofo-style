@@ -42,7 +42,10 @@ rules:
     -
       allow-leading-underscore: false
       convention: hyphenatedlowercase
-  mixins-before-declarations: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude: ['breakpoint', 'mq', 'media-breakpoint-up', 'media-breakpoint-down']
   nesting-depth:
     - 1 # only a warning
     -
