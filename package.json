@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/MozillaFoundation/mofo-style/issues"
   },
-  "homepage": "https://github.com/MozillaFoundation/mofo-style"
+  "homepage": "https://github.com/MozillaFoundation/mofo-style",
+  "dependencies": {
+    "eslint": "^3.3.1"
+  }
 }
